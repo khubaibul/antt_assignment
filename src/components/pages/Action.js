@@ -26,8 +26,8 @@ const ActionComponent = (props) => {
           id="demo-simple-select"
           label="Action"
         >
-          <option value="view">view</option>
-          <option value="edit">edit</option>
+          <option value="view">VIEW</option>
+          <option value="edit">EDIT</option>
         </select>
       </FormControl>
     </Box>

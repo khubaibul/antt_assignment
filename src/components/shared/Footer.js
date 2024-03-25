@@ -10,6 +10,7 @@ const Footer = () => {
         alignItems: "center",
         padding: "0px 100px",
         gap: "10px",
+        marginTop: "24px"
       }}
     >
       <p>Copyright ©️ 2024 Showa.</p>

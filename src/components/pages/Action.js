@@ -8,7 +8,8 @@ import {
 } from "@mui/material";
 import dotIcon from "../../assets/dots.png";
 
-const ActionComponent = (props) => {
+const Action = (props) => {
+  console.log(props)
   return (
     <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
       <FormControl fullWidth>
@@ -34,4 +35,4 @@ const ActionComponent = (props) => {
   );
 };
 
-export default ActionComponent;
+export default Action;

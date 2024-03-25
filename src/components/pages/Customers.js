@@ -8,8 +8,7 @@ import {
   DialogContent,
   DialogTitle,
 } from "@mui/material";
-import dotsIcon from "../../assets/dots.png";
-import ActionComponent from "./Action";
+import Action from "./Action";
 
 const columns = [
   {
@@ -58,46 +57,10 @@ const columns = [
     field: "action",
     headerName: "ACTION",
     width: 100,
-    renderCell: (props) => ActionComponent(props),
+    renderCell: (props) => Action(props),
   },
 ];
 
-function ActionButton({ row }) {
-  const [open, setOpen] = React.useState(false);
-
-  const handleActionClick = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  return (
-    <div>
-      <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Choose Action</DialogTitle>
-        <div style={{}}>
-          <Button onClick={() => handleEdit(row.id)}>Edit</Button>
-          <Button onClick={() => handleDelete(row.id)}>Delete</Button>
-        </div>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Cancel
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </div>
-  );
-}
-
-function handleEdit(id) {
-  // Handle edit action
-}
-
-function handleDelete(id) {
-  // Handle delete action
-}
 const customers = [
   {
     id: 1,
